@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: lsyc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-rtyc-tenant/byoc-app-czso/lsyc@sha256:4994017f19f681e65f36530263c6c500075e0f20ea26062b87fdf044fce511ef
+        name: my-java-quarkus
+        resources: {}
+status: {}
